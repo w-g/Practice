@@ -24,6 +24,8 @@ namespace ConsoleApp
             {
                 NewCarInfo(this, new CarInfoEventArgs(car));
             }
+
+
         }
     }
 
