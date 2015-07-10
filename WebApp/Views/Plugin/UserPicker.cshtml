@@ -1,0 +1,51 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Style {
+    <link href="~/Styles/userpicker.css" rel="stylesheet" />
+}
+
+<div class="user-selector-container" style="width:350px;">
+    <ul class="user-selected-panel">
+        <li class="selected-user label bg-danger">
+            <span>北京</span>
+            <i class="fa fa-close"></i>
+        </li>
+        <li class="search-field">
+            <input style="width:34px; border:none" type="text" id="search-field" />
+        </li>
+    </ul>
+    <div class="user-option-panel">
+        <ul class="user-option-list">
+            <li>
+                王志斌
+                <input type="radio" name="{name}" value="{userId}" />
+            </li>
+            <li>
+                田涛
+                <input type="radio" name="{name}" value="{userId}" />
+            </li>
+            <li>
+                杨明杰
+                <input type="radio" name="{name}" value="{userId}" />
+            </li>
+            <li>
+                蔡世颖
+                <input type="radio" name="{name}" value="{userId}" />
+            </li>
+        </ul>
+    </div>
+</div>
+
+@section Script {
+    <script>
+
+        require(["jquery", "userpicker"], function () {
+
+            $(".user-selector-container").userpicker();
+
+        });
+
+    </script>
+}
