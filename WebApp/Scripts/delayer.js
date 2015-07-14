@@ -14,7 +14,7 @@
 
     // 延迟器（顺延功能）
     var Delayer = function (timeout) {
-        this._stos = [];
+        this._stos = []; /* _标识私有变量 */
         this.timeout = timeout;
     };
 
