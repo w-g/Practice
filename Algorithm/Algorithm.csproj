@@ -7,8 +7,8 @@
     <ProjectGuid>{4E6B989A-EBDB-484F-9F4B-914BA1AC5D9F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Algorithm</RootNamespace>
-    <AssemblyName>Algorithm</AssemblyName>
+    <RootNamespace>Sediment.Algorithm</RootNamespace>
+    <AssemblyName>Sediment.Algorithm</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

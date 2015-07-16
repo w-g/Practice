@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApp
+namespace Sediment.Practise.Event
 {
     public class CarInfoEventArgs : EventArgs
     {
@@ -44,25 +44,25 @@ namespace ConsoleApp
 
     class Program
     {
-        static void Main(string[] args)
-        {
-            var dealer = new CarDealer();
+        //static void Main(string[] args)
+        //{
+        //    var dealer = new CarDealer();
 
-            var lucy = new Consumer("lucy");
-            dealer.NewCarInfo += lucy.NewCarIsHere; // 订阅事件
+        //    var lucy = new Consumer("lucy");
+        //    dealer.NewCarInfo += lucy.NewCarIsHere; // 订阅事件
 
-            dealer.NewCar("Mercedes"); // 发布事件
+        //    dealer.NewCar("Mercedes"); // 发布事件
 
-            var lily = new Consumer("lily");
-            dealer.NewCarInfo += lily.NewCarIsHere; // 订阅事件
+        //    var lily = new Consumer("lily");
+        //    dealer.NewCarInfo += lily.NewCarIsHere; // 订阅事件
 
-            dealer.NewCar("Ferrari"); // 发布事件
+        //    dealer.NewCar("Ferrari"); // 发布事件
 
-            dealer.NewCarInfo -= lucy.NewCarIsHere; // 取消订阅
+        //    dealer.NewCarInfo -= lucy.NewCarIsHere; // 取消订阅
 
-            dealer.NewCar("Toyota");
+        //    dealer.NewCar("Toyota");
 
-            Console.ReadKey();
-        }
+        //    Console.ReadKey();
+        //}
     }
 }
