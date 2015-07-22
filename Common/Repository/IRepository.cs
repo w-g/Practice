@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Sediment.Common
 {
-    interface IRepository<T>
+    public interface IRepository<T>
     {
         /* 数据仓储层提供数据的仓储服务：
          * 业务层“告诉”仓储层：“我要****的数据”或者“我要****（操作）数据”
@@ -21,7 +21,14 @@ namespace Sediment.Common
         /* ORM是数据仓储层的实现工具，而非数据仓储层本身
          */
 
-        // conditions 应由业务逻辑层提供
-        IEnumerable<T> Fetch(/* conditons */);
+        // predicate（谓词逻辑） 应由业务逻辑层提供
+        IEnumerable<T> Fetch(Func<T, bool> predicate);
+
+        IEnumerable<T> Fetch(IEnumerable<int> primaryKeys);
+
+        T FirstOrDefault(int primaryKey);
+
+        T FirstOrDefault(Func<T, bool> predicate);
+
     }
 }

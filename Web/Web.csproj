@@ -76,6 +76,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Scripts\lib\helper.js" />
     <Content Include="Scripts\lib\jquery-1.11.3.js" />
     <Content Include="Scripts\lib\require.config.js" />
     <Content Include="Scripts\lib\require.js" />
