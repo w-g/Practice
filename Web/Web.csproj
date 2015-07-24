@@ -86,10 +86,10 @@
     <Content Include="Styles\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="packages.config" />
-    <Content Include="Views\Plugin\UserPicker.cshtml" />
     <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Scripts\jquery.extend.js" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -104,7 +104,6 @@
     <Content Include="Styles\bootstrap.css" />
     <Content Include="Styles\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Styles\userpicker.css" />
-    <Content Include="Scripts\userpicker.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -116,6 +115,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Styles\images\" />
+    <Folder Include="Views\Plugin\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
