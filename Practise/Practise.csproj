@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Cryptography.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="TODO.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

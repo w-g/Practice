@@ -8,8 +8,8 @@ namespace Sediment.Web.Controllers
 {
     public class PluginController : Controller
     {
-        // GET: Plugin
-        public ActionResult UserPicker()
+        // GET: Index
+        public ActionResult Index()
         {
             return View();
         }
