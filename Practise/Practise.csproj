@@ -46,6 +46,7 @@
   <ItemGroup>
     <Compile Include="Event.cs" />
     <Compile Include="Expression.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Content Include="TODO.txt" />
   </ItemGroup>
