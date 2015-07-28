@@ -1,7 +1,6 @@
-﻿using System;
-using System.Globalization;
+﻿using System.Globalization;
 
-namespace Sediment.Common
+namespace System
 {
     /// <summary>
     /// 日期的扩展
@@ -43,39 +42,28 @@ namespace Sediment.Common
         {
             string friendlyDate = string.Empty;
 
-            //校准时间
+            // 校准时间
             dateTime = dateTime.ToLocalTime();
             DateTime now = DateTime.Now;
 
             TimeSpan span = dateTime - now;
+
+            // 前后三十天内
             if (Math.Abs(span.Days) <= 30)
             {
                 int week_span = dateTime.GetWeekOfYear() - now.GetWeekOfYear();
                 int day_span = (dateTime.Date - now.Date).Days;
 
-                //上下三十天内
+                // 当天
                 if (span.Days == 0)
                 {
-                    //当天
                     if (span.Minutes == 0)
                     {
                         friendlyDate = "现在";
                     }
-                    else if (Math.Abs(span.Hours) >= 1)
+                    // 当天的前后一小时之内
+                    else if (Math.Abs(span.Hours) <= 1)
                     {
-                        //当天的前后一小时之外
-                        if (span.Hours > 0)
-                        {
-                            friendlyDate = string.Format("{0}小时后", Math.Abs(span.Hours));
-                        }
-                        else
-                        {
-                            friendlyDate = string.Format("{0}小时前", Math.Abs(span.Hours));
-                        }
-                    }
-                    else
-                    {
-                        //一小时之内
                         if (span.Minutes > 0)
                         {
                             friendlyDate = string.Format("{0}分钟后", Math.Abs(span.Minutes));
@@ -85,35 +73,48 @@ namespace Sediment.Common
                             friendlyDate = string.Format("{0}分钟前", Math.Abs(span.Minutes));
                         }
                     }
+                    // 当天的前后一小时之外
+                    else
+                    {
+                        if (span.Hours > 0)
+                        {
+                            friendlyDate = string.Format("{0}小时后", Math.Abs(span.Hours));
+                        }
+                        else
+                        {
+                            friendlyDate = string.Format("{0}小时前", Math.Abs(span.Hours));
+                        }
+                    }
                 }
+                // break
                 else if (span.Days > 0)
                 {
-                    //后三十天内
+                    // 后三十天内
                     if (dateTime.Year == now.Year)
                     {
-                        //同一年
+                        // 同一年
                         if (week_span == 1)
                         {
                             friendlyDate = string.Format("下周{0}", DateTimeExtensions.GetWeekString(dateTime));
                         }
                         else
                         {
-                            //n天后
+                            // n天后
                             friendlyDate = string.Format("{0}天后", Math.Abs(day_span));
                         }
                     }
                     else
                     {
-                        //n天后
+                        // n天后
                         friendlyDate = string.Format("{0}天后", Math.Abs(day_span));
                     }
                 }
                 else
                 {
-                    //前三十天内
+                    // 前三十天内
                     if (dateTime.Year == now.Year)
                     {
-                        //同一年
+                        // 同一年
                         if (week_span == -1)
                         {
                             friendlyDate = string.Format("上周{0}", DateTimeExtensions.GetWeekString(dateTime));

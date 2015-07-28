@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sediment.Common
+namespace System.Linq.Expressions
 {
     /// <summary>
     /// Represents the extender for Expression[Func[T, bool]] type.
