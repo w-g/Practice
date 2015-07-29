@@ -7,7 +7,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 
-namespace WebApp
+namespace Sediment.Web
 {
     public class Global : System.Web.HttpApplication
     {
@@ -17,7 +17,7 @@ namespace WebApp
             RouteTable.Routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Plugin", action = "Index", id = UrlParameter.Optional }
             );
         }
 

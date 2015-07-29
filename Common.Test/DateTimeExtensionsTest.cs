@@ -9,9 +9,9 @@ namespace Sediment.Common.Test
         [TestMethod]
         public void ToFriendlyDateString()
         {
-            DateTime time = DateTime.Now.AddDays(-1);
+            DateTime time = new DateTime(2007, 1, 1);
 
-           Assert.AreEqual(time.ToFriendlyDateString(), "1天前");
+            Assert.AreEqual(time.ToFriendlyDateString(), "下周一");
         }
     }
 }

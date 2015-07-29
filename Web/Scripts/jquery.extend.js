@@ -1,4 +1,4 @@
-﻿/*
+﻿/**
  * 一些对jQuery对象的扩展
  */
 
@@ -8,7 +8,7 @@
 	/* 扩展 :file 使其支持图片的本地预览
 	 ************************************/
 
-	$.fn.preview = function ($img) {
+	$.fn.localImagePreview = function ($img) {
 
 		var self = this[0],
 			img = $img[0];

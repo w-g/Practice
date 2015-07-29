@@ -48,7 +48,7 @@ namespace System
 
             TimeSpan span = dateTime - now;
 
-            // 前后三十天内
+            // 当前的前后三十天内
             if (Math.Abs(span.Days) <= 30)
             {
                 int week_span = dateTime.GetWeekOfYear() - now.GetWeekOfYear();
@@ -61,7 +61,7 @@ namespace System
                     {
                         friendlyDate = "现在";
                     }
-                    // 当天的前后一小时之内
+                    // 当前的前后一小时之内
                     else if (Math.Abs(span.Hours) <= 1)
                     {
                         if (span.Minutes > 0)
@@ -73,7 +73,7 @@ namespace System
                             friendlyDate = string.Format("{0}分钟前", Math.Abs(span.Minutes));
                         }
                     }
-                    // 当天的前后一小时之外
+                    // 当前的前后一小时之外
                     else
                     {
                         if (span.Hours > 0)
@@ -86,17 +86,18 @@ namespace System
                         }
                     }
                 }
-                // break
+                // 当前的后三十天内
                 else if (span.Days > 0)
                 {
-                    // 后三十天内
+                    // 同一年
                     if (dateTime.Year == now.Year)
                     {
-                        // 同一年
+                        // 不同周
                         if (week_span == 1)
                         {
                             friendlyDate = string.Format("下周{0}", DateTimeExtensions.GetWeekString(dateTime));
                         }
+                        // 同一周
                         else
                         {
                             // n天后
@@ -109,12 +110,12 @@ namespace System
                         friendlyDate = string.Format("{0}天后", Math.Abs(day_span));
                     }
                 }
+                // 当前的前三十天内
                 else
                 {
-                    // 前三十天内
+                    // 同一年
                     if (dateTime.Year == now.Year)
                     {
-                        // 同一年
                         if (week_span == -1)
                         {
                             friendlyDate = string.Format("上周{0}", DateTimeExtensions.GetWeekString(dateTime));
