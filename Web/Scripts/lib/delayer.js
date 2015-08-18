@@ -12,9 +12,8 @@
 
 })(function () {
 
-    // 延迟器（顺延功能）
     var Delayer = function (timeout) {
-        this._stos = []; /* _标识私有变量 */
+        this._stos = [];
         this.timeout = timeout;
     };
 
@@ -22,19 +21,28 @@
 
         call: function (handler, context, args) {
 
+            var self = this;
             var sto = setTimeout(function (args) {
                 handler.call(context, args);
 
-                // 这一定是队首
-                this._stos.shift();
+                self._stos.shift();
 
-            }, this.timeout, args);
+            }, self.timeout, args);
 
-            if (this._stos.length) {
-                clearTimeout(this._stos.shift());
+            if (self._stos.length) {
+                clearTimeout(self._stos.shift());
             }
 
-            this._stos.push(sto);
+            self._stos.push(sto);
+        },
+
+        clear: function () {
+            var self = this;
+            if (self._stos.length) {
+                $.each(self._stos, function (index, sto) {
+                    clearTimeout(sto);
+                });
+            }
         }
     };
 

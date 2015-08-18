@@ -3,7 +3,7 @@
 
     // Countdown jQuery plugin
     $.fn.countdown = function () {
-  
+
         var $this = $(this),
             text = $this.text(),
             pattern = /(\d+)天(\d+)小时(\d+)分(\d+)秒/;
@@ -12,20 +12,20 @@
             return;
         }
 
-		var	matches = pattern.exec(text /* 1天2小时3分4秒 */),
+        var matches = pattern.exec(text /* 1天2小时3分4秒 */),
 			day = parseInt(matches[1]),
 			hour = parseInt(matches[2]),
 			minute = parseInt(matches[3]),
 			second = parseInt(matches[4]);
-        
+
         // debug time span
-		var prevTime = new Date().valueOf();
+        // var prevTime = new Date().valueOf();
 
-		setTimeout(function () {
+        setTimeout(function () {
 
-		    // debug time span
-		    console.log(new Date().valueOf() - prevTime);
-		    prevTime = new Date().valueOf();
+            // debug time span
+            // console.log(new Date().valueOf() - prevTime);
+            // prevTime = new Date().valueOf();
 
             if (second == 0) {
                 if (minute == 0) {

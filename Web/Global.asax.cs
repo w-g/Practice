@@ -17,7 +17,7 @@ namespace Sediment.Web
             RouteTable.Routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Plugin", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Marry", action = "Index", id = UrlParameter.Optional }
             );
         }
 

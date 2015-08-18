@@ -48,7 +48,6 @@
     <Compile Include="Expression.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Content Include="TODO.txt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

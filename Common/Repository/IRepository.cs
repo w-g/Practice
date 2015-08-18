@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Sediment.Common
@@ -19,16 +20,27 @@ namespace Sediment.Common
          */
 
         /* ORM是数据仓储层的实现工具，而非数据仓储层本身
+         * 数据仓储层的实现并不限于关系数据库，可能是NoSql或者XML，甚至是文件
+         * predicate（谓词逻辑） 应由业务逻辑层提供
+         * 数据仓储层应提供数据的增、改、删、查实例、查实例列表、查计数
          */
 
-        // predicate（谓词逻辑） 应由业务逻辑层提供
-        IEnumerable<T> Fetch(Func<T, bool> predicate);
+        void Create(T entity);
 
-        IEnumerable<T> Fetch(IEnumerable<int> primaryKeys);
+        void Update(T entity);
 
-        T FirstOrDefault(int primaryKey);
+        void Delete(T entity);
 
-        T FirstOrDefault(Func<T, bool> predicate);
+        T Get(int id);
 
+        T Get(Expression<Func<T, bool>> predicate);
+
+        int Count(Expression<Func<T, bool>> predicate);
+
+        IEnumerable<T> Fetch(Expression<Func<T, bool>> predicate);
+
+        IEnumerable<T> Fetch(Expression<Func<T, bool>> predicate, Action<Orderable<T>> order);
+
+        IEnumerable<T> Fetch(Expression<Func<T, bool>> predicate, Action<Orderable<T>> order, int skip, int count);
     }
 }

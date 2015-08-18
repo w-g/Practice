@@ -13,5 +13,17 @@ namespace Sediment.Web.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult AjaxAction()
+        {
+            return Content("This is AjaxAction!");
+        }
+
+        [HttpPost]
+        public ActionResult Action()
+        {
+            return Content("This is Action!");
+        }
     }
 }
