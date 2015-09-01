@@ -14,7 +14,7 @@ namespace System.Linq.Expressions
     /// Apworks specifications. For more information about this solution please
     /// refer to http://blogs.msdn.com/b/meek/archive/2008/05/02/linq-to-entities-combining-predicates.aspx.
     /// </summary>
-    public static class ExpressionExtensions
+    public static class ExpressionExtension
     {
         #region Private Methods
 

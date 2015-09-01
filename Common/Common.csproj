@@ -43,20 +43,25 @@
   <ItemGroup>
     <Compile Include="Encryption\AES.cs" />
     <Compile Include="Encryption\SHA.cs" />
-    <Compile Include="Extensions\DateTimeExtensions.cs" />
-    <Compile Include="Extensions\ExpressionExtensions.cs" />
-    <Compile Include="ICrawler.cs" />
+    <Compile Include="Extension\DateTimeExtension.cs" />
+    <Compile Include="Extension\ExpressionExtension.cs" />
+    <Compile Include="Crawler\ICrawler.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Implementations\FileRepository.cs" />
     <Compile Include="Repository\Implementations\SqlRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Repository\Implementations\NoSqlRepository.cs" />
     <Compile Include="Repository\Orderable.cs" />
+    <Compile Include="Searcher\Implementations\AzureSearcher.cs" />
+    <Compile Include="Searcher\Implementations\ElasticSearcher.cs" />
+    <Compile Include="Searcher\Implementations\SolrSearcher.cs" />
+    <Compile Include="Searcher\ISearcher.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Mvc\" />
-    <Folder Include="NoSqlDB\" />
-    <Folder Include="Redis\" />
+    <Folder Include="Algorithm\Sort\" />
+    <Folder Include="Crawler\Implementations\" />
+    <Folder Include="NoSqlDB\Redis\" />
+    <Folder Include="Task\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

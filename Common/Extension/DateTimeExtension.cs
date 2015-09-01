@@ -5,7 +5,7 @@ namespace System
     /// <summary>
     /// 日期的扩展
     /// </summary>
-    public static class DateTimeExtensions
+    public static class DateTimeExtension
     {
         /// <summary>
         /// 获取指定日所在周
@@ -28,7 +28,7 @@ namespace System
         {
             string dayofweek = string.Empty;
 
-            dayofweek = string.Format("星期{0}", DateTimeExtensions.GetWeekString(dateTime));
+            dayofweek = string.Format("星期{0}", DateTimeExtension.GetWeekString(dateTime));
 
             return dayofweek;
         }
@@ -95,7 +95,7 @@ namespace System
                         // 不同周
                         if (week_span == 1)
                         {
-                            friendlyDate = string.Format("下周{0}", DateTimeExtensions.GetWeekString(dateTime));
+                            friendlyDate = string.Format("下周{0}", DateTimeExtension.GetWeekString(dateTime));
                         }
                         // 同一周
                         else
@@ -118,7 +118,7 @@ namespace System
                     {
                         if (week_span == -1)
                         {
-                            friendlyDate = string.Format("上周{0}", DateTimeExtensions.GetWeekString(dateTime));
+                            friendlyDate = string.Format("上周{0}", DateTimeExtension.GetWeekString(dateTime));
                         }
                         else
                         {
