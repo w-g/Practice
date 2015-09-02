@@ -90,6 +90,7 @@
     <Content Include="Scripts\lib\delayer.js" />
     <Content Include="Scripts\extend.js" />
     <Content Include="Scripts\lib\jquery-1.11.3.js" />
+    <Content Include="Scripts\lib\postlink.js" />
     <Content Include="Scripts\lib\require.config.js" />
     <Content Include="Scripts\lib\require.js" />
     <Content Include="Scripts\site.js" />
