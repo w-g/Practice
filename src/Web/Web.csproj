@@ -86,7 +86,29 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="README.txt" />
     <Content Include="packages.config" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="TODO.txt" />
+    <Content Include="Views\Shared\404.html" />
+    <Content Include="Views\Shared\500.html" />
+    <Content Include="Views\Shared\Error.html" />
+    <Content Include="Views\Shared\forbidden.html" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Marry\ConfirmYes.cshtml" />
+    <Content Include="Views\Marry\Fool.cshtml" />
+    <Content Include="Views\Marry\Index.cshtml" />
+    <Content Include="Views\Marry\No.cshtml" />
+    <Content Include="Views\Marry\Yes.cshtml" />
+    <Content Include="Views\Plugin\Index.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_Marry.cshtml" />
+    <Content Include="Views\web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -95,15 +117,36 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Scripts\extend.js" />
+    <Content Include="Scripts\jquery.extend.js" />
+    <Content Include="Scripts\lib\bootstrap.js" />
+    <Content Include="Scripts\lib\countdown.js" />
+    <Content Include="Scripts\lib\delayer.js" />
+    <Content Include="Scripts\lib\jquery-1.11.3.js" />
+    <Content Include="Scripts\lib\postlink.js" />
+    <Content Include="Scripts\lib\require.config.js" />
+    <Content Include="Scripts\lib\require.js" />
+    <Content Include="Scripts\lib\uri.js" />
+    <Content Include="Scripts\modules\userpicker.js" />
+    <Content Include="Scripts\site.js" />
+    <Content Include="Styles\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Styles\lib\bootstrap.css" />
+    <Content Include="Styles\modules\userpicker.css" />
+    <Content Include="Styles\site.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\MarryController.cs" />
+    <Compile Include="Controllers\PluginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="MVC\SedimentViewEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Styles\images\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
