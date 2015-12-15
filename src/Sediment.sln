@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module.Redis", "Modules\Module.Redis\Module.Redis.csproj", "{8C223AF8-CE9B-4A51-B92E-AB81DC36B346}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module.Redis.Test", "Modules.Tests\Module.Redis.Test\Module.Redis.Test.csproj", "{DB65CA76-FA33-4DA3-8640-27D7ED778A0C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{8C223AF8-CE9B-4A51-B92E-AB81DC36B346}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C223AF8-CE9B-4A51-B92E-AB81DC36B346}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C223AF8-CE9B-4A51-B92E-AB81DC36B346}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB65CA76-FA33-4DA3-8640-27D7ED778A0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB65CA76-FA33-4DA3-8640-27D7ED778A0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB65CA76-FA33-4DA3-8640-27D7ED778A0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB65CA76-FA33-4DA3-8640-27D7ED778A0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,5 +73,6 @@ Global
 		{7149CD92-F27C-4DA0-80CC-2F22A0F21A88} = {A5551651-79F8-400C-9492-3DA46898F9CE}
 		{81990985-FA5A-4CE6-AEB8-097A780F94AE} = {7149CD92-F27C-4DA0-80CC-2F22A0F21A88}
 		{8C223AF8-CE9B-4A51-B92E-AB81DC36B346} = {B1DC4E1C-6C7B-46F6-AB9D-E3EB4E6C7E0F}
+		{DB65CA76-FA33-4DA3-8640-27D7ED778A0C} = {7149CD92-F27C-4DA0-80CC-2F22A0F21A88}
 	EndGlobalSection
 EndGlobal
