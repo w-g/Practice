@@ -7,8 +7,8 @@
     <ProjectGuid>{BAA5957C-6A19-453D-A7A8-7F5C664275DA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sediment.Common</RootNamespace>
-    <AssemblyName>Sediment.Common</AssemblyName>
+    <RootNamespace>Sediment.Infrastructure</RootNamespace>
+    <AssemblyName>Sediment.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -50,6 +50,8 @@
     <Compile Include="Extension\DateTimeExtension.cs" />
     <Compile Include="Extension\ExpressionExtension.cs" />
     <Compile Include="Crawler\ICrawler.cs" />
+    <Compile Include="IoC\IocContainer.cs" />
+    <Compile Include="IoC\IIocContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repository\Implementations\FileRepository.cs" />
     <Compile Include="Repository\Implementations\SqlRepository.cs" />
@@ -58,8 +60,8 @@
     <Compile Include="Repository\Orderable.cs" />
     <Compile Include="Searcher\Implementations\AzureSearcher.cs" />
     <Compile Include="Searcher\Implementations\ElasticSearcher.cs" />
-    <Compile Include="Searcher\Implementations\SolrSearcher.cs" />
     <Compile Include="Searcher\ISearcher.cs" />
+    <Compile Include="Searcher\ISearcherFactory.cs" />
     <Compile Include="Utility\ICounter.cs" />
     <Compile Include="Utility\SequenceGenerator.cs" />
   </ItemGroup>

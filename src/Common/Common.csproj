@@ -7,8 +7,8 @@
     <ProjectGuid>{9956E4D8-29FB-4CBA-8231-9F2E5C0C3EC8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Common</RootNamespace>
-    <AssemblyName>Common</AssemblyName>
+    <RootNamespace>Sediment.Common</RootNamespace>
+    <AssemblyName>Sediment.Common</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="OperationLog\OperationLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User\User.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="README.txt" />

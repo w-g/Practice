@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module.Solr
+namespace Sediment.Infrastructure
 {
-    public class Class1
+    public interface ISearcherFactory<T>
     {
+        ISearcher<T> CreateSearcher();
     }
 }

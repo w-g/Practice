@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{81990985-FA5A-4CE6-AEB8-097A780F94AE}</ProjectGuid>
+    <ProjectGuid>{47DAD044-7221-48E5-AA5C-24C7616A9D81}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Module.Solr.Test</RootNamespace>
-    <AssemblyName>Module.Solr.Test</AssemblyName>
+    <RootNamespace>Common.Test</RootNamespace>
+    <AssemblyName>Common.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -35,11 +35,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Autofac, Version=4.0.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
-      <HintPath>..\..\packages\Autofac.4.0.0-rc1-177\lib\net45\Autofac.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
@@ -55,32 +50,9 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="..\..\Common.Test\Starter.cs">
-      <Link>Starter.cs</Link>
-    </Compile>
-    <Compile Include="UnitTest.cs" />
+    <Compile Include="Starter.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\Common\Common.csproj">
-      <Project>{9956e4d8-29fb-4cba-8231-9f2e5c0c3ec8}</Project>
-      <Name>Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Infrastructure\Infrastructure.csproj">
-      <Project>{baa5957c-6a19-453d-a7a8-7f5c664275da}</Project>
-      <Name>Infrastructure</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Modules\Module.Autofac\Module.Autofac.csproj">
-      <Project>{bff69aca-9dd7-4fba-99b7-049041a78f87}</Project>
-      <Name>Module.Autofac</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Modules\Module.Solr\Module.Solr.csproj">
-      <Project>{b8b4f49c-21a5-44ba-a248-b829f62beeb5}</Project>
-      <Name>Module.Solr</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

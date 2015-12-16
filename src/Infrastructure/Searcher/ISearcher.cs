@@ -4,10 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sediment.Common
+namespace Sediment.Infrastructure
 {
-    public class ISearcher
+    public interface ISearcher<T>
     {
+        void Indexing(T obj, IndexingType indexingType);
 
+        IEnumerable<T> Search(ISearchQuery query);
+    }
+
+    public interface ISearchQuery
+    {
+    }
+
+    public enum IndexingType
+    {
+        Add,
+
+        Update,
+
+        Delete
     }
 }

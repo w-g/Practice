@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Module.Solr.Test
+namespace Common.Test
 {
     [TestClass]
     public class UnitTest1
