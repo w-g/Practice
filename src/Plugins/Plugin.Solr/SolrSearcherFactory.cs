@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module.Solr
+namespace Plugin.Solr
 {
     public class SolrSearcherFactory<T> : ISearcherFactory<T>
     {

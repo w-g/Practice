@@ -7,8 +7,8 @@
     <ProjectGuid>{B8B4F49C-21A5-44BA-A248-B829F62BEEB5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Module.Solr</RootNamespace>
-    <AssemblyName>Module.Solr</AssemblyName>
+    <RootNamespace>Plugin.Solr</RootNamespace>
+    <AssemblyName>Plugin.Solr</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

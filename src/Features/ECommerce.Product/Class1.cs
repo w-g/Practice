@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Module.Redis
+namespace ECommerce.Product
 {
     public class Class1
     {

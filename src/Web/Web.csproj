@@ -106,7 +106,7 @@
     <Content Include="Views\Plugin\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Shared\_Marry.cshtml" />
-    <Content Include="Views\web.config">
+    <Content Include="Views\Web.config">
       <SubType>Designer</SubType>
     </Content>
     <None Include="Web.Debug.config">

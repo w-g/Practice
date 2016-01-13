@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Module.Redis.Test
+namespace Dingdong.Tests
 {
     [TestClass]
     public class UnitTest1

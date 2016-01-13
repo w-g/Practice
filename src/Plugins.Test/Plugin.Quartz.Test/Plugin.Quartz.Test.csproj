@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DB65CA76-FA33-4DA3-8640-27D7ED778A0C}</ProjectGuid>
+    <ProjectGuid>{784DFA6F-038E-4068-8274-8FF4CA1FAAA8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Module.Redis.Test</RootNamespace>
-    <AssemblyName>Module.Redis.Test</AssemblyName>
+    <RootNamespace>Plugin.Quartz.Test</RootNamespace>
+    <AssemblyName>Plugin.Quartz.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>

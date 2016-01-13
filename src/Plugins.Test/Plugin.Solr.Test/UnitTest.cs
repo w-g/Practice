@@ -3,7 +3,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sediment.Common;
 using Sediment.Infrastructure;
 
-namespace Module.Solr.Test
+namespace Plugin.Solr.Test
 {
     [TestClass]
     public class UnitTest
