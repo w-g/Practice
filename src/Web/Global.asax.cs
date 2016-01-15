@@ -1,5 +1,4 @@
-﻿using Sediment.Web.MVC;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -21,7 +20,7 @@ namespace Sediment.Web
             );
 
             ViewEngines.Engines.Clear();
-            ViewEngines.Engines.Add(new SedimentViewEngine());
+            ViewEngines.Engines.Add(new RazorViewEngine());
         }
     }
 }

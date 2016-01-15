@@ -18,7 +18,6 @@ namespace Sediment.Test
             var builder = new ContainerBuilder();
 
 
-
             var container = builder.Build();
 
             IocContainer.Build(new IocContainerAdapter(container));

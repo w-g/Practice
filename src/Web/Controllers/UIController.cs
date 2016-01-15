@@ -2,7 +2,7 @@
 
 namespace Sediment.Web.Controllers
 {
-    public class PluginController : Controller
+    public class UIController : Controller
     {
         // GET: Index
         public ActionResult Index()

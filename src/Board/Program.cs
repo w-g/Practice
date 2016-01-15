@@ -29,7 +29,7 @@ namespace Board
                 "The fruit with the longest name is {0}.",
                 longestName) + "\n";
 
-            Console.WriteLine(outputBlock);
+            Console.WriteLine(outputBlock.GetHashCode());
 
             Console.ReadKey();
         }
