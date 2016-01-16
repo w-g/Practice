@@ -1,0 +1,81 @@
+﻿
+
+<form>
+    <table>
+        <thead>
+            <tr>
+                <th><input type="checkbox" name="_name" data-role="switch" /></th>
+                <th>HEAD#1</th>
+                <th>HEAD#2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <input type="checkbox" name="_name" value="1" />
+                </td>
+                <td>BODY#1#1</td>
+                <td>BODY#1#2</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="_name" value="2" />
+                </td>
+                <td>BODY#2#1</td>
+                <td>BODY#2#2</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="_name" value="2" />
+                </td>
+                <td>BODY#3#1</td>
+                <td>BODY#3#2</td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="checkbox" name="_name" value="2" />
+                </td>
+                <td>BODY#4#1</td>
+                <td>BODY#4#2</td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+<script>
+
+    $(document).ready(function () {
+
+        // 全（不）选
+        $(document).on("click", ":checkbox", function (e) {
+
+            var self = this,
+                $this = $(this),
+                $form = $this.closest("form");
+
+            if (!self.name) {
+                return;
+            }
+
+            if ($this.is("[data-role='switch']")) {
+                $form.find(":checkbox[name='" + self.name + "']")
+                    .not(":checkbox[data-role='switch']")
+                    .each(function (index, item) {
+                        item.checked = self.checked;
+                    });
+            } else {
+                if ($form.length > 0) {
+                    var $switch = $form.find(":checkbox[data-role='switch']");
+                    if ($switch.length > 0) {
+                        $switch[0].checked = $form.find(":checkbox[name='" + self.name + "']")
+                            .not(":checkbox[data-role='switch']")
+                            .not(":checked").length == 0;
+                    }
+                }
+            }
+        });
+
+    });
+
+</script>
+
