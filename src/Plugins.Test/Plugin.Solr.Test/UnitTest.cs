@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Sediment.Common;
 using Sediment.Infrastructure;
+using Sediment.IoC;
 
 namespace Plugin.Solr.Test
 {

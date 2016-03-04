@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sediment.Common.Utility
+namespace Sediment.IoC
 {
     public class IdGenerator
     {

@@ -1,7 +1,6 @@
 ﻿using Autofac;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Module.Autofac;
-using Sediment.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Linq;

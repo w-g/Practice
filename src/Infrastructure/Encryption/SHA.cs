@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Sediment.Common
+namespace Sediment.Encryption
 {
     /// <summary>
     /// 非对称加密(SHA512)

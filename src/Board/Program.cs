@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
+using System.Net.Mail;
+using System.Security.Cryptography;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Board
@@ -10,28 +14,42 @@ namespace Board
     {
         static void Main(string[] args)
         {
-            string outputBlock = string.Empty;
+            HashSet<int> list = new HashSet<int>();
 
-            string[] fruits = { "apple", "mango", "orange", "passionfruit", "grape" };
+            list.Add(1);
+            list.Add(1);
+            list.Add(1);
 
-            // Determine whether any string in the array is longer than "banana".
-            string longestName =
-                fruits.Aggregate("banana",
-                                (longest, next) =>
-                                {
-                                    Console.WriteLine(next+ " " + longest);
-                                    return next.Length > longest.Length ? next : longest;
-                                },
-                                // Return the final result as an upper case string.
-                                fruit => fruit.ToUpper());
-
-            outputBlock += String.Format(
-                "The fruit with the longest name is {0}.",
-                longestName) + "\n";
-
-            Console.WriteLine(outputBlock.GetHashCode());
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.ReadKey();
+        }
+
+        static string TakeLongTime()
+        {
+            Thread.Sleep(3000);
+            return "...";
+        }
+
+        static void SendEmail()
+        {
+            var client = new SmtpClient("smtp.mxhichina.com", 25);
+
+            client.EnableSsl = false;
+            client.UseDefaultCredentials = false;
+            client.DeliveryMethod = SmtpDeliveryMethod.Network;
+            client.Credentials = new NetworkCredential("service01@chemmerce.com", "2015Chem");
+
+            var from = new MailAddress("service01@chemmerce.com", "化商网");
+            var to = new MailAddress("346994217@qq.com");
+
+            var email = new MailMessage(from, to);
+            email.Body = "<a href=\"javascript:;\">http://www.chemmerce.com?param1=1&param2=2</a>";
+            email.BodyEncoding = Encoding.UTF8;
+            client.Send(email);
         }
     }
 }

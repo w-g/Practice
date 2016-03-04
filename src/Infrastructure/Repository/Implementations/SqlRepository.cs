@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sediment.Common
+namespace Sediment.IoC
 {
     /// <summary>
     /// 关系数据库的仓储实现

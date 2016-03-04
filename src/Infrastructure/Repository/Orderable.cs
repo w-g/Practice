@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Sediment.Common
+namespace Sediment.IoC
 {
     public class Orderable<T>
     {

@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Web.Configuration;
 
-namespace Sediment.Common
+namespace Sediment.Encryption
 {
     /// <summary>
     /// AES对称加密(256位)

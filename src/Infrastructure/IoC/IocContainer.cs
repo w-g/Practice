@@ -1,5 +1,5 @@
 ﻿
-namespace Sediment.Infrastructure
+namespace Sediment.IoC
 {
     public class IocContainer: IIocContainer
     {

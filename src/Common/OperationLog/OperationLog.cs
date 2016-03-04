@@ -23,7 +23,7 @@ namespace Sediment.Common.Module
         //public string Controller { get; set; }
 
         // HOW
-        public string arguments { get; set; }
+        public string Arguments { get; set; }
 
         // WHERE
         public string IP { get; set; }

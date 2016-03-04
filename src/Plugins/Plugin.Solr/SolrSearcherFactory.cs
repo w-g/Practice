@@ -1,4 +1,5 @@
 ﻿using Sediment.Infrastructure;
+using Sediment.IoC;
 using System;
 using System.Collections.Generic;
 using System.Linq;

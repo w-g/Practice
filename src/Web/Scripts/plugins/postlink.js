@@ -6,14 +6,17 @@
  * 然后提交form间接实现link的post提交效果
  * ========================================================= */
 
-$("a[data-plugin='post-link']").on("click", function (e) {
+$("a[data-trigger='post-link']").on("click", function (e) {
+    e.preventDefault();
+
     var $this = $(this),
         $form = $("<form>");
 
-    $form.attr("method", "post")
-        .attr("action", $this.attr("href"));
+    if (confirm("confirm message")/* not required */) {
 
-    $form.submit();
+        $form.attr("method", "post")
+            .attr("action", $this.attr("href"));
 
-    e.preventDefault();
+        $form.submit();
+    }
 });

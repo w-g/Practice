@@ -1,4 +1,5 @@
 ﻿using Sediment.Infrastructure;
+using Sediment.IoC;
 using SolrNet;
 using SolrNet.Impl;
 using System;

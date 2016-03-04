@@ -7,7 +7,7 @@
     <ProjectGuid>{BAA5957C-6A19-453D-A7A8-7F5C664275DA}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sediment.Infrastructure</RootNamespace>
+    <RootNamespace>Sediment</RootNamespace>
     <AssemblyName>Sediment.Infrastructure</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -37,6 +37,7 @@
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -45,11 +46,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache\ICache.cs" />
+    <Compile Include="Cache\Implementations\MemoryCacheWrapper.cs" />
+    <Compile Include="Counter\ICounter.cs" />
     <Compile Include="Encryption\AES.cs" />
     <Compile Include="Encryption\SHA.cs" />
+    <Compile Include="Excel\IExcelDocument.cs" />
+    <Compile Include="Excel\IExcelSheet.cs" />
+    <Compile Include="Excel\IExcelRow.cs" />
+    <Compile Include="Excel\IExcelCell.cs" />
     <Compile Include="Extension\DateTimeExtension.cs" />
     <Compile Include="Extension\ExpressionExtension.cs" />
     <Compile Include="Crawler\ICrawler.cs" />
+    <Compile Include="HtmlToPdf\IHtmlToPdfConverter.cs" />
     <Compile Include="IoC\IocContainer.cs" />
     <Compile Include="IoC\IIocContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -63,7 +72,6 @@
     <Compile Include="Searcher\Implementations\ElasticSearcher.cs" />
     <Compile Include="Searcher\ISearcher.cs" />
     <Compile Include="Searcher\ISearcherFactory.cs" />
-    <Compile Include="Utility\ICounter.cs" />
     <Compile Include="Utility\SequenceGenerator.cs" />
   </ItemGroup>
   <ItemGroup>
