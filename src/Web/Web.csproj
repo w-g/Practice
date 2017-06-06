@@ -96,10 +96,14 @@
     <Content Include="Global.asax" />
     <Content Include="README.txt" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\plugins\bootstrap-datetimepicker\bootstrap.datetimepicker.js" />
+    <Content Include="Scripts\plugins\bootstrap-datetimepicker\bootstrap.datetimepicker.defaults.js" />
+    <Content Include="Scripts\plugins\jquery.validate.js" />
     <Content Include="Styles\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Styles\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Styles\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Styles\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Styles\plugins\bootstrap.datetimepicker.css" />
     <Content Include="TODO.txt" />
     <Content Include="Views\Shared\404.html" />
     <Content Include="Views\Shared\500.html" />
@@ -123,19 +127,17 @@
   <ItemGroup>
     <Content Include="Scripts\extend.js" />
     <Content Include="Scripts\jquery.extend.js" />
-    <Content Include="Scripts\lib\bootstrap.js" />
-    <Content Include="Scripts\plugins\countdown.js" />
-    <Content Include="Scripts\plugins\delayer.js" />
+    <Content Include="Scripts\plugins\jquery.countdown.js" />
+    <Content Include="Scripts\lib\delayer.js" />
     <Content Include="Scripts\lib\jquery.js" />
-    <Content Include="Scripts\plugins\postlink.js" />
-    <Content Include="Scripts\lib\require.config.js" />
-    <Content Include="Scripts\lib\require.js" />
+    <Content Include="Scripts\lib\require\require.config.js" />
+    <Content Include="Scripts\lib\require\require.js" />
     <Content Include="Scripts\lib\uri.js" />
-    <Content Include="Scripts\plugins\userpicker.js" />
+    <Content Include="Scripts\plugins\jquery.itempicker.js" />
     <Content Include="Scripts\site.js" />
     <Content Include="Styles\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Styles\lib\bootstrap.css" />
-    <Content Include="Styles\modules\userpicker.css" />
+    <Content Include="Styles\plugins\userpicker.css" />
     <Content Include="Styles\site.css" />
     <Content Include="Web.config" />
   </ItemGroup>

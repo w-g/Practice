@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "App.Common": "1.0.0-*",
+    "NETStandard.Library": "1.6.0",
+    "NPoco": "3.4.4",
+    "Org.Library": "1.0.0-*",
+    "Org.Library.Extension": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

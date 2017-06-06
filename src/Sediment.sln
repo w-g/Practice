@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{8F81C44C-91C2-4EB2-B22A-19581A286AF4}"
 EndProject
@@ -49,8 +49,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Applications", "Application
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dingdong.Tests", "Applications.Test\Dingdong.Tests\Dingdong.Tests.csproj", "{B19AA48B-C903-42F2-9B8A-DAA517FFD934}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Board", "Board\Board.csproj", "{E9D60911-434B-4C0B-8277-C64DC0A6C4B9}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HtmlTableToExcel", "Applications\HtmlTableToExcel\HtmlTableToExcel.csproj", "{1FA8CFDF-0379-4A28-8C05-6F59EA15E57E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.NPOI", "Plugins\Plugin.NPOI\Plugin.NPOI.csproj", "{DDF24BF5-3EA8-495E-A641-4377ABED6992}"
@@ -58,6 +56,10 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.WkHtmlToPdf", "Plugins\Plugin.WkHtmlToPdf\Plugin.WkHtmlToPdf.csproj", "{F88143C8-D2ED-4C5A-8B74-8B8171DEBF96}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin.WkHtmlToPdf.Test", "Plugins.Test\Plugin.WkHtmlToPdf.Test\Plugin.WkHtmlToPdf.Test.csproj", "{2DFB2014-AE8A-44B8-BEB3-FFFFF03BFB0D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo", "Applications\Demo\Demo.csproj", "{54B45213-1361-457C-9DCC-1D31389B69CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReplaceContentInPdf", "Applications\ReplaceContentInPdf\ReplaceContentInPdf.csproj", "{EBCCDFCD-CF78-46D8-A07E-BB50399484D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,10 +131,6 @@ Global
 		{B19AA48B-C903-42F2-9B8A-DAA517FFD934}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B19AA48B-C903-42F2-9B8A-DAA517FFD934}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B19AA48B-C903-42F2-9B8A-DAA517FFD934}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E9D60911-434B-4C0B-8277-C64DC0A6C4B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E9D60911-434B-4C0B-8277-C64DC0A6C4B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E9D60911-434B-4C0B-8277-C64DC0A6C4B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E9D60911-434B-4C0B-8277-C64DC0A6C4B9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1FA8CFDF-0379-4A28-8C05-6F59EA15E57E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1FA8CFDF-0379-4A28-8C05-6F59EA15E57E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FA8CFDF-0379-4A28-8C05-6F59EA15E57E}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -149,6 +147,14 @@ Global
 		{2DFB2014-AE8A-44B8-BEB3-FFFFF03BFB0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DFB2014-AE8A-44B8-BEB3-FFFFF03BFB0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DFB2014-AE8A-44B8-BEB3-FFFFF03BFB0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B45213-1361-457C-9DCC-1D31389B69CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B45213-1361-457C-9DCC-1D31389B69CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B45213-1361-457C-9DCC-1D31389B69CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B45213-1361-457C-9DCC-1D31389B69CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBCCDFCD-CF78-46D8-A07E-BB50399484D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBCCDFCD-CF78-46D8-A07E-BB50399484D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBCCDFCD-CF78-46D8-A07E-BB50399484D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBCCDFCD-CF78-46D8-A07E-BB50399484D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -174,5 +180,7 @@ Global
 		{DDF24BF5-3EA8-495E-A641-4377ABED6992} = {B1DC4E1C-6C7B-46F6-AB9D-E3EB4E6C7E0F}
 		{F88143C8-D2ED-4C5A-8B74-8B8171DEBF96} = {B1DC4E1C-6C7B-46F6-AB9D-E3EB4E6C7E0F}
 		{2DFB2014-AE8A-44B8-BEB3-FFFFF03BFB0D} = {7149CD92-F27C-4DA0-80CC-2F22A0F21A88}
+		{54B45213-1361-457C-9DCC-1D31389B69CE} = {286F3386-3DBF-460F-86C2-91883EFD27EB}
+		{EBCCDFCD-CF78-46D8-A07E-BB50399484D3} = {286F3386-3DBF-460F-86C2-91883EFD27EB}
 	EndGlobalSection
 EndGlobal
