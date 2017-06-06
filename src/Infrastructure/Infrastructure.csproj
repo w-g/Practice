@@ -52,6 +52,9 @@
     <Compile Include="Counter\ICounter.cs" />
     <Compile Include="Encryption\AES.cs" />
     <Compile Include="Encryption\SHA.cs" />
+    <Compile Include="Event\EventNames.cs" />
+    <Compile Include="Event\EventPublisher.cs" />
+    <Compile Include="Event\EventSubscriber.cs" />
     <Compile Include="Excel\IExcelDocument.cs" />
     <Compile Include="Excel\IExcelSheet.cs" />
     <Compile Include="Excel\IExcelRow.cs" />
